@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    ul[type="disk"]>li*4+ul[type="circle"]>li*3
+    <ul type="disk">
+        <li>Nadadoras</li>
+        <li>Ciclistas</li>
+        <li>Atletas</li>
+        <li>Futbolistas</li>
+        <ul type="circle">
+            <li>Messi</li>
+            <li>Cr7</li>
+            <li>Joao</li>
+        </ul>
+    </ul>
+    <hr>
+    ul[type="disk"]>li+ul[type="circle"]>li*2^^ul[type="disk"]>li+ul[type="circle"]>li*3^^ul[type="disk"]>li^ul[type="disk"]>li
+    <ul type="disk">
+        <li>Barcelona</li>
+        <ul type="circle">
+            <li>Mataró</li>
+            <li>Sabadell</li>
+        </ul>
+    </ul>
+    <ul type="disk">
+        <li>Tarragona</li>
+        <ul type="circle">
+            <li>Reus</li>
+            <li>Salou</li>
+            <li>Cambrils</li>
+        </ul>
+    </ul>
+    <ul type="disk">
+        <li>Lleida</li>
+    </ul>
+    <ul type="disk">
+        <li>Girona</li>
+    </ul>
+    <hr>
+    ul[type="disk"]>li^ul[type="disk"]>li^ul[type="disk"]>li+ul[type"circle"]>li+ul[type="square"]>li*3^li*3^^ul[type="disk"]>li
+    <ul type="disk">
+        <li>Sobre mi</li>
+    </ul>
+    <ul type="disk">
+        <li>Servicios</li>
+    </ul>
+    <ul type="disk">
+        <li>Tutoriales</li>
+        <ul type="">
+            <li>Tutorial html</li>
+            <ul type="square">
+                <li>Enlaces</li>
+                <li>Imágenes</li>
+                <li>Listas</li>
+            </ul>
+            <li>Tutorial css</li>
+            <li>Tutorial javascript</li>
+            <li>Tutorial wordpress</li>
+        </ul>
+    </ul>
+    <ul type="disk">
+        <li>Contacto</li>
+    </ul>
+</body>
+
+</html>
