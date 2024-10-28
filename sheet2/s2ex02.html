@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Información Personal</legend>
+        <label for="nombre"
+          >Nombre:
+          <input type="text" required id="nombre" name="nombre" /></label
+        ><br />
+        <label for="apellido"
+          >Apellido :<input
+            type="text"
+            required
+            id="apellido"
+            name="apellido" /></label
+        ><br />
+        <label for="fechaNac"
+          >Nombre:
+          <input type="date" required id="fechaNac" name="fechaNac" /></label
+        ><br />
+        <p>Género:</p>
+        <input type="radio" name="genero" id="hombre" required /><label
+          for="nombre"
+          >Masculino</label
+        >
+        <input type="radio" name="genero" id="mujer" /><label for="mujer"
+          >Femenino</label
+        >
+        <input type="radio" name="genero" id="otro" /><label for="otro"
+          >Otro</label
+        >
+      </fieldset>
+
+      <fieldset>
+        <legend>Información de contacto</legend>
+        <label for="email"
+          >Dirección de correo electrónico:
+          <input type="email" name="mail" id="email" required /></label
+        ><br />
+        <label for="telefono"
+          >Teléfono:
+          <input type="tel" name="telefone" id="telefone" required /></label
+        ><br />
+        <label for="direccion"
+          >Dirección: <textarea name="direccion" id="direccion"></textarea>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Información de cuenta</legend>
+        <label for="username"
+          >Nombre de usuario:
+          <input type="text" name="username" id="username" required /></label
+        ><br />
+        <label for="contraseña"
+          >Contraseña:
+          <input
+            type="password"
+            name="contraseña"
+            id="contraseña"
+            required
+            minlength="8"
+            maxlength="20"
+            pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,20}$" /></label
+        ><br />
+        <label for="repass"
+          >Repita la Contraseña:
+          <input type="password" name="repass" id="repass" required
+        /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferencias</legend>
+        <label for="colorSel"
+          >Seleccionar un color favorito:
+          <select name="color" id="colorSel">
+            <option value="rojo">Rojo</option>
+            <option value="azul">Azul</option>
+            <option value="verde">Verde</option>
+            <option value="amarillo">Amarillo</option>
+          </select></label
+        ><br />
+        <label for="tAndC"
+          >Aceptar términos y condiciones:
+          <input type="checkbox" name="terms" id="tAndC" required
+        /></label>
+      </fieldset>
+      <br>
+      <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>
